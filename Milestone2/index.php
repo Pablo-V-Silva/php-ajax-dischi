@@ -9,9 +9,11 @@
   </header>
 
   <main>
-    <?php 
-    require __DIR__ . '/particles/albums.php'
-    ?>
+    <div id="app">
+      <?php 
+      require __DIR__ . '/particles/albums.php'
+      ?>
+    </div>
   </main>
 
   <script src='https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js'></script> 

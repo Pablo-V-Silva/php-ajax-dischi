@@ -1,4 +1,4 @@
-new App = new Vue({
+const app = new Vue({
   el: '#app',
   data: {
     albumsArray: null,
@@ -8,9 +8,12 @@ new App = new Vue({
     axios
       .get('./api/albums-array.php')
       .then(response => {
-        console.log(response);
+        this.albumsArray = response.data;
+
+        console.log(this.albumsArray);
       }).catch(error => {
         console.log(error);
       });
+
   }
-});
+})
