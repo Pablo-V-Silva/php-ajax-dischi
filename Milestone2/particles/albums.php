@@ -1,4 +1,4 @@
-<div class="container py-5">
+<div id="app" class="container py-5">
   <div class="row g-5">  
     <div class="col-3">
       <div class="card">
