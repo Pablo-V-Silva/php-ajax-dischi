@@ -7,8 +7,10 @@ new App = new Vue({
   mounted() {
     axios
       .get('./api/albums-array.php')
-      .then(function (response) {
+      .then(response => {
         console.log(response);
-      })
+      }).catch(error => {
+        console.log(error);
+      });
   }
-})
+});
